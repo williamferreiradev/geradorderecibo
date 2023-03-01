@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;500;600;700&display=swap');
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    background: rgb(87, 1, 247);
+}
+
+.emitir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.emitir .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emitir .container .img{
+    display: flex;
+    width: 100%;
+    max-width: 80rem;
+}
+
+.emitir .container .img img{
+    width: 100%;
+    max-width: 20rem;
+}
+
+.dados{
+    margin-top: 10rem;
+    color: white;
+    font-size: 1.1rem;
+    padding: 2rem;
+}
+
+.dados #emitente{
+    margin-top: 1rem;
+    padding: 0.1rem;
+}
+
+.dados #nome{
+    margin-top: 1rem;
+    padding: 0.1rem;
+}
+
+.dados #valor{
+    margin-top: 1rem;
+    padding: 0.1rem;
+}
+
+button{
+    color: white;
+    font-size: 1rem;
+    border: none;
+    background: rgb(63, 2, 177);
+    padding: 0.5rem 1.4rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+
+.print{
+    display: none;
+    margin: 1rem;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 60rem;
+}
+
+.print .logo{
+    display: flex;
+    width: 100%;
+    max-width: 10rem;
+}
+
+.print .logo img{
+    width: 100%;
+    max-width: 80rem;
+}
+
+
+.print .title h1{
+    font-size: 3rem;
+    line-height: 50px;
+    width: 100%;
+    margin-bottom: 1rem;
+    max-width: 30rem;
+}
+
+.print .title p{
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin-bottom: 5rem;
+}
+
+
+.print .valor-pagamento{
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.print .motivo-pagamento{ 
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.print .motivo-pagamento h2, .print .motivo-pagamento span{
+    font-size: 1.4rem;
+}
+
+
+.print .pagador {
+    font-size: 1.4rem;
+    display: flex;
+    margin-bottom: 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.print .pagador h2, .print .pagador span{
+    font-size: 1.4rem;
+}
+
+.agradecimento{
+    width: 100%;
+    max-width: 50rem;
+    margin-top: 10rem;
+    font-size: 1rem;
+}
+
+@media print{
+
+    .print{
+        display: block;
+    }
+
+    .dados{
+        display: none;
+    }
+}
+
